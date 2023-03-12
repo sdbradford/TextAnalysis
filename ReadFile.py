@@ -16,8 +16,10 @@ def word_count(str):
 
 strIntegerForRemoval = '1234567890'
 strPunctuationForRemoval = ':;.,'
+strGreekLetterForRemoval = 'ἦν'
 
-strStripChars = strIntegerForRemoval + strPunctuationForRemoval 
+
+strStripChars = strIntegerForRemoval + strPunctuationForRemoval + strGreekLetterForRemoval
 
 with open("input/TestGreekLetter.txt") as infile:
     text = infile.read()
