@@ -14,11 +14,13 @@ def word_count(str):
     return counts
 
 
+strIntegerForRemoval = '1234567890'
+strPunctuationForRemoval = ':;.,'
 
 with open("input/TestGreekLetter.txt") as infile:
     text = infile.read()
     #strip integers
-    text = text.translate({ord(i): None for i in '1234567890'})
+    text = text.translate({ord(i): None for i in strIntegerForRemoval})
 
 print(text)
 print("------- word count ---------")
