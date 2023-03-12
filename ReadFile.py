@@ -24,3 +24,4 @@ print(text)
 print("------- word count ---------")
 print( word_count(text))
 
+print("------- word count ---------")
