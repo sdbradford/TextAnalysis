@@ -13,14 +13,15 @@ def word_count(str):
 
     return counts
 
-
+#Dictionary of characters for removal
 strIntegerForRemoval = '1234567890'
 strPunctuationForRemoval = ':;.,'
-strGreekLetterForRemoval = 'ἦν'
+#strGreekLetterForRemoval = 'ἦν'
 
+#concatenate the characters for stripping
+strStripChars = strIntegerForRemoval + strPunctuationForRemoval 
 
-strStripChars = strIntegerForRemoval + strPunctuationForRemoval + strGreekLetterForRemoval
-
+#strip out the characters
 with open("input/TestGreekLetter.txt") as infile:
     text = infile.read()
     #strip integers
