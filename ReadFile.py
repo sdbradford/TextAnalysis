@@ -24,7 +24,7 @@ strStripChars = strIntegerForRemoval + strPunctuationForRemoval + strGreekLetter
 with open("input/TestGreekLetter.txt") as infile:
     text = infile.read()
     #strip integers
-    text = text.translate({ord(i): None for i in strIntegerForRemoval})
+    text = text.translate({ord(i): None for i in strStripChars})
 
 print(text)
 print("------- word count ---------")
